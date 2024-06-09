@@ -4,6 +4,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
+    transition: font-size 0.4s ease, width 0.4s ease, height 0.4s ease;
 }
 
 html{
@@ -87,8 +88,17 @@ html{
 }
 
 #sdmit-drone-shot {
+    display: block;
     width: 100%;
     height: 100%;
+}
+
+#sdmit-drone-shot-1 {
+    display: none;
+}
+
+#sdmit-drone-shot-2 {
+    display: none;
 }
 
 #sdmit-login-img {
@@ -204,7 +214,7 @@ html{
     border-radius: 5px;
 }
 
-#login-form-btn {
+/* #login-form-btn {
     width: 100%;
     border-radius: 5px;
     padding: 10px;
@@ -213,7 +223,7 @@ html{
     transition: box-shadow 0.3s;
 }
 
-/* #login-form-btn:hover {
+#login-form-btn:hover {
     color: #fff;
     border: none;
     background-color: #ff1749;
@@ -222,6 +232,9 @@ html{
 
 /* Basic button styling */
 #login-form-btn {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
     position: relative;
     display: inline-block;
     color: #000000;
@@ -246,11 +259,28 @@ html{
 #login-form-btn:hover::before {
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 #login-form-btn:hover {
     color: #ffffff;
     border: 1px solid transparent;
+}
+
+#illustration-1 {
+    height: 200px; 
+    position: absolute;
+    left: 5%; 
+    /* bottom: 5%; */
+    top: 75%;
+}
+
+#illustration-2 {
+    height: 250px; 
+    position: absolute; 
+    right: 5%; 
+    top: 70%;
+    /* bottom: 1%; */
 }
 
 .footer-heart {
@@ -261,35 +291,22 @@ html{
 .footer {
     position: absolute;
     left: 44%;
-    top: 115%;
-    /* bottom: 0; */
+    top: 100%;
 }
 
 /* Media Query for Tablets */
 @media only screen and (min-width: 784px) and (max-width: 1080px) {
 
-    /* .nav-bar-desktop {
-        display: block;
-    }
-
-    .nav-bar-mobile {
-        display: block;
-    }
-
-    .nav-bar-mobile > a > img {
-        height: 6rem;
-    } */
-
     .nav-bar {
         padding: 1.25rem;
     }
 
+    /* .nav-bar-desktop > a > img {
+        max-width: 225px;
+    } */
+
     .nav-bar-right {
         grid-template-columns: repeat(5, 1fr);
-    }
-
-    .nav-bar-links {
-        font-size: small;
     }
     
     .hero-content {
@@ -297,23 +314,61 @@ html{
     }
 
     #sdmit-drone-shot {
-        width: max-content;
+        display: none;
+    }
+        
+    #sdmit-drone-shot-1 {
+        width: 100%;
+        height: 100%;
+        display: block;
     }
 
+    #sdmit-drone-shot-2 {
+        display: none;
+    }
+
+    * {
+        font-size: small;
+    }
+
+    .login-form {
+        width: 350px;
+        padding: 20px;
+        top: 35%;
+    }
+
+    #illustration-1 {
+        height: 125px; 
+        position: absolute;
+        left: 1%; 
+        bottom: 10%;
+        z-index: -2;
+    }
+
+    #illustration-2 {
+        height: 200px; 
+        position: absolute; 
+        right: 1%; 
+        bottom: 10%;
+        z-index: -2;
+    }
+
+    .footer {
+        position: absolute;
+        left: 42%;
+        top: 110%;
+    }
 }
 
+/* Media Query for Mobile */
 @media only screen and (max-width: 784px) {
-
-    .nav-bar-desktop > a > img {
-        max-width: 200px;
-    }
 
     .nav-bar-right {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .nav-bar-links {
-        font-size: smaller;
+    .nav-bar {
+        padding: 1rem;
     }
 
     .hero-content {
@@ -321,12 +376,43 @@ html{
     }
 
     #sdmit-drone-shot {
-        width: max-content;
+        display: none;
+    }
+        
+    #sdmit-drone-shot-1 {
+        display: none;
+    }
+
+    #sdmit-drone-shot-2 {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    * {
+        font-size: small;
     }
 
     .login-form {
-        top: 50%;
+        width: 320px;
+        padding: 15px;
+        top: 35%;
     }
+
+    #illustration-1 {
+        display: none;
+    }
+
+    #illustration-2 {
+        display: none;
+    }
+
+    .footer {
+        position: absolute;
+        left: 37%;
+        top: 105%;
+    }
+
 }
 
 
