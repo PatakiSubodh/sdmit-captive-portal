@@ -122,20 +122,7 @@ html{
     display: block;
 }
 
-.submenu {
-    list-style: none;
-    width: 200px;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    display: none;
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-}
-
-.sub-submenu {
+.submenu, .sub-submenu {
     list-style: none;
     width: 200px;
     position: absolute;
@@ -201,6 +188,7 @@ html{
     display: block;
     top: -5px;
     left: 100%;
+    backdrop-filter: blur(10px);
 }
 
 .hero-content {
