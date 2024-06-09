@@ -291,7 +291,7 @@ html{
 .footer {
     position: absolute;
     left: 44%;
-    top: 100%;
+    top: 110%;
 }
 
 /* Media Query for Tablets */
@@ -410,7 +410,7 @@ html{
     .footer {
         position: absolute;
         left: 37%;
-        top: 105%;
+        top: 110%;
     }
 
 }
