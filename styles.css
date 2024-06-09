@@ -420,4 +420,8 @@ html{
         left: 30%;
         top: 135%;
     }
+
+    .submenu, .sub-submenu {
+        width: 130px;
+    }
 }
