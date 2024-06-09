@@ -28,7 +28,7 @@ html{
 }
 
 .nav-bar {
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     background-color: #e9e9e9;
@@ -37,10 +37,11 @@ html{
 
 .nav-bar-desktop > a > img {
     max-width: 300px;
+    padding-top: 1rem;
 }
 
 .nav-bar-right {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 5px;
@@ -48,7 +49,6 @@ html{
 }
 
 .nav-bar-right > a, .menu-item {
-    /* font-size: 13px; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,10 @@ html{
 }
 
 .menu-item {
+    /* padding-top: 12px; */
+    text-align: center;
     width: 100%;
+    /* height: 100%; */
 }
 
 .menu-item > a {
@@ -123,7 +126,6 @@ html{
     -webkit-backdrop-filter: blur(10px); 
     border-radius: 15px;
 }
-
 
 .submenu-item {
     position: relative;
@@ -180,7 +182,6 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* display: none; */
 }
 
 .login-form {
@@ -189,7 +190,7 @@ html{
     width: 400px;
     gap: 15px;
     position: absolute;
-    top: 30%;
+    top: 40%;
     padding: 40px;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -212,11 +213,56 @@ html{
     transition: box-shadow 0.3s;
 }
 
-#login-form-btn:hover {
-    background-color: #ff1749;
+/* #login-form-btn:hover {
     color: #fff;
     border: none;
+    background-color: #ff1749;
     box-shadow: 5px 5px 0px black;
+} */
+
+/* Basic button styling */
+#login-form-btn {
+    position: relative;
+    display: inline-block;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    overflow: hidden;
+    transition: color 0.4s ease, border 0.4s ease;
+}
+
+/* Hover effect */
+#login-form-btn::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, #ff1749 50%, transparent 50%);
+    transition: top 0.4s ease, left 0.4s ease;
+}
+
+#login-form-btn:hover::before {
+    top: 0;
+    left: 0;
+}
+
+#login-form-btn:hover {
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+.footer-heart {
+    font-size: larger;
+    color: #ff1749;
+}
+
+.footer {
+    position: absolute;
+    left: 44%;
+    top: 115%;
+    /* bottom: 0; */
 }
 
 /* Media Query for Tablets */
@@ -236,7 +282,6 @@ html{
 
     .nav-bar {
         padding: 1.25rem;
-        /* width: ; */
     }
 
     .nav-bar-right {
@@ -244,11 +289,44 @@ html{
     }
 
     .nav-bar-links {
-        font-size: xx-large;
+        font-size: small;
+    }
+    
+    .hero-content {
+        overflow: hidden;
     }
 
-
-
-
+    #sdmit-drone-shot {
+        width: max-content;
+    }
 
 }
+
+@media only screen and (max-width: 784px) {
+
+    .nav-bar-desktop > a > img {
+        max-width: 200px;
+    }
+
+    .nav-bar-right {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav-bar-links {
+        font-size: smaller;
+    }
+
+    .hero-content {
+        overflow: hidden;
+    }
+
+    #sdmit-drone-shot {
+        width: max-content;
+    }
+
+    .login-form {
+        top: 50%;
+    }
+}
+
+
