@@ -184,7 +184,7 @@ html{
 .submenu-item:hover .sub-submenu {
     display: block;
     top: -5px;
-    left: 102%;
+    left: 100%;
 }
 
 .hero-content {
@@ -358,6 +358,10 @@ html{
         left: 42%;
         top: 110%;
     }
+
+    .submenu, .sub-submenu {
+        width: 150px;
+    }
 }
 
 /* Media Query for Mobile */
@@ -411,6 +415,10 @@ html{
         position: absolute;
         left: 30%;
         top: 135%;
+    }
+
+    .submenu, .sub-submenu {
+        width: 150px;
     }
 }
 
