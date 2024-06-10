@@ -198,13 +198,16 @@ html{
     align-items: center;
 }
 
+/* login form */
+
+
 .login-form {
     display: flex;
     flex-direction: column;
     width: 400px;
     gap: 15px;
-    position: absolute;
-    top: 40%;
+    /* position: absolute; */
+    /* top: 40%; */
     padding: 40px;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -271,20 +274,22 @@ html{
     border: 1px solid transparent;
 }
 
+
+
+/* login form */
+
 #illustration-1 {
     height: 200px; 
-    position: absolute;
+    /* position: absolute;
     left: 5%; 
-    /* bottom: 5%; */
-    top: 75%;
+    top: 75%; */
 }
 
 #illustration-2 {
     height: 250px; 
-    position: absolute; 
+    /* position: absolute; 
     right: 5%; 
-    top: 70%;
-    /* bottom: 1%; */
+    top: 70%; */
 }
 
 .footer-heart {
@@ -292,11 +297,43 @@ html{
     color: #ff1749;
 }
 
-.footer {
+/* .footer {
     position: absolute;
     left: 44%;
     top: 110%;
+} */
+
+.footer {
+    text-align: center;
+    /* border: 10px solid; */
 }
+
+.hero-content-div {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+
+.hero-element {
+    /* border: 10px solid; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    z-index: 999;
+    /* border: 10px solid; */
+}
+
+.illustration {
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.login-form {
+    margin: 0 10% 0 6%;
+}
+
 
 /* Media Query for Tablets */
 @media only screen and (min-width: 784px) and (max-width: 1080px) {
