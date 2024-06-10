@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Background color for the login page */
+        body {
+            background-color: #f0f0f0;
+        }
+
+        /* Login container */
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Custom error message */
+        .error-message {
+            background-color: #ffcccc; /* Light red */
+            color: #8b0000; /* Dark red text color */
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: center;
+            animation: vibration 0.5s ease infinite alternate;
+        }
+
+        /* Vibration animation */
+        @keyframes vibration {
+            from {
+                transform: translateX(-2px);
+            }
+            to {
+                transform: translateX(2px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Login form goes here -->
+
+        <!-- Custom error message -->
+        <div class="error-message">
+            <p>Invalid username or password. Please try again.</p>
+        </div>
+    </div>
+</body>
+</html>
