@@ -196,18 +196,17 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-/* login form */
-
+/* --------------- login form -------- */
 
 .login-form {
     display: flex;
+    margin: 0 10% 0 6%;
     flex-direction: column;
     width: 400px;
     gap: 15px;
-    /* position: absolute; */
-    /* top: 40%; */
     padding: 40px;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -274,34 +273,12 @@ html{
     border: 1px solid transparent;
 }
 
-
-
-/* login form */
-
-#illustration-1 {
-    height: 200px; 
-    /* position: absolute;
-    left: 5%; 
-    top: 75%; */
-}
-
-#illustration-2 {
-    height: 250px; 
-    /* position: absolute; 
-    right: 5%; 
-    top: 70%; */
-}
+/* --------------- login form -------- */
 
 .footer-heart {
     font-size: larger;
     color: #ff1749;
 }
-
-/* .footer {
-    position: absolute;
-    left: 44%;
-    top: 110%;
-} */
 
 .footer {
     text-align: center;
@@ -315,11 +292,10 @@ html{
 }
 
 .hero-element {
-    /* border: 10px solid; */
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     z-index: 999;
     /* border: 10px solid; */
 }
@@ -330,10 +306,13 @@ html{
     padding-top: 150px;
 }
 
-.login-form {
-    margin: 0 10% 0 6%;
+#illustration-1 {
+    height: 200px;
 }
 
+#illustration-2 {
+    height: 250px;
+}
 
 /* Media Query for Tablets */
 @media only screen and (min-width: 784px) and (max-width: 1080px) {
@@ -342,16 +321,13 @@ html{
         padding: 1.25rem;
     }
 
-    /* .nav-bar-desktop > a > img {
-        max-width: 225px;
-    } */
+    .nav-bar-desktop > a > img {
+        max-width: 250px;
+    }
 
     .nav-bar-right {
         grid-template-columns: repeat(5, 1fr);
-    }
-    
-    .hero-content {
-        overflow: hidden;
+        margin-top: 1.5rem;
     }
 
     #sdmit-drone-shot {
@@ -372,36 +348,30 @@ html{
         font-size: small;
     }
 
-    .login-form {
-        width: 350px;
-        padding: 20px;
+    .hero-content-div {
         top: 35%;
     }
 
+    .login-form {
+        width: 350px;
+        margin: 0 3.6% 0 3.6%;
+        padding: 25px;
+    }
+
+    .illustration {
+        padding-top: 100px;
+    }
+
     #illustration-1 {
-        height: 125px; 
-        position: absolute;
-        left: 1%; 
-        bottom: 10%;
-        z-index: -2;
+        height: 135px;
     }
 
     #illustration-2 {
-        height: 200px; 
-        position: absolute; 
-        right: 1%; 
-        bottom: 10%;
-        z-index: -2;
-    }
-
-    .footer {
-        position: absolute;
-        left: 42%;
-        top: 110%;
+        height: 135px;
     }
 
     .submenu, .sub-submenu {
-        width: 150px;
+        width: 170px;
     }
 }
 
@@ -410,14 +380,15 @@ html{
 
     .nav-bar-right {
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 1rem;
     }
 
     .nav-bar {
         padding: 1rem;
     }
 
-    .hero-content {
-        overflow: hidden;
+    .nav-bar-desktop > a > img {
+        max-width: 200px;
     }
 
     #sdmit-drone-shot {
@@ -438,27 +409,21 @@ html{
         font-size: small;
     }
 
+    .hero-content-div {
+        top: 40%;
+    }
+
     .login-form {
-        width: 320px;
-        padding: 15px;
-        top: 50%;
+        width: 350px;
+        margin: 0;
+        padding: 25px;
     }
 
-    #illustration-1 {
+    .illustration {
         display: none;
-    }
-
-    #illustration-2 {
-        display: none;
-    }
-
-    .footer {
-        position: absolute;
-        left: 30%;
-        top: 135%;
     }
 
     .submenu, .sub-submenu {
-        width: 130px;
+        width: 160px;
     }
 }
