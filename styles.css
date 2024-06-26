@@ -203,7 +203,7 @@ html{
 
 .login-form {
     display: flex;
-    margin: 0 10% 0 6%;
+    margin-bottom: 20px;
     flex-direction: column;
     width: 400px;
     gap: 15px;
@@ -219,22 +219,6 @@ html{
     border: 1px solid;
     border-radius: 5px;
 }
-
-/* #login-form-btn {
-    width: 100%;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid;
-    background: none;
-    transition: box-shadow 0.3s;
-}
-
-#login-form-btn:hover {
-    color: #fff;
-    border: none;
-    background-color: #ff1749;
-    box-shadow: 5px 5px 0px black;
-} */
 
 /* Basic button styling */
 #login-form-btn {
@@ -288,7 +272,7 @@ html{
 
 .hero-element {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     margin-bottom: 2.5rem;
     z-index: 999;
@@ -302,11 +286,21 @@ html{
 }
 
 #illustration-1 {
-    height: 200px;
+    height: 300px;
 }
 
 #illustration-2 {
     height: 250px;
+}
+
+
+#footer-name {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+#footer-name:hover{
+    color: #ff1749;
 }
 
 /* Media Query for Tablets */
@@ -349,20 +343,12 @@ html{
 
     .login-form {
         width: 350px;
-        margin: 0 3.6% 0 3.6%;
+        margin-bottom: 20px;
         padding: 25px;
     }
 
     .illustration {
-        padding-top: 100px;
-    }
-
-    #illustration-1 {
-        height: 135px;
-    }
-
-    #illustration-2 {
-        height: 135px;
+        display: none;
     }
 
     .submenu, .sub-submenu {
@@ -410,7 +396,6 @@ html{
 
     .login-form {
         width: 350px;
-        margin: 0;
         padding: 25px;
     }
 
